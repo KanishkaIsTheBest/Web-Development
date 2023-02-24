@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Raleway", sans-serif;
+      }
+
+      body,
+      html {
+        height: 100%;
+        line-height: 1.8;
+      }
+
+      /* Full height image header */
+      .bgimg-1 {
+        background-position: center;
+        background-size: cover;
+        background-image: url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHRtbHxlbnwwfHwwfHw%3D&w=1000&q=80");
+        min-height: 100%;
+      }
+
+      .w3-bar .w3-button {
+        padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+          <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+          <a href="#team" class="w3-bar-item w3-button"
+            ><i class="fa fa-user"></i> JOBS</a
+          >
+          <a href="#work" class="w3-bar-item w3-button"
+            ><i class="fa fa-th"></i> DESIGNS</a
+          >
+          <a href="#pricing" class="w3-bar-item w3-button"
+            ><i class="fa fa-usd"></i> LINKS</a
+          >
+          <a href="#contact" class="w3-bar-item w3-button"
+            ><i class="fa fa-envelope"></i> Q&A</a
+          >
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close ×</a
+      >
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"
+        >ABOUT</a
+      >
+      <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button"
+        >TEAM</a
+      >
+      <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button"
+        >WORK</a
+      >
+      <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button"
+        >PRICING</a
+      >
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"
+        >CONTACT</a
+      >
+    </nav>
+
+    <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-display-left w3-text-white" style="padding: 48px">
+        <span class="w3-jumbo w3-hide-small">Web Development</span><br />
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium"></span><br />
+        <span class="w3-large">By Kanishka Garg.</span>
+        <p>
+          <a
+            href="#about"
+            class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"
+            >Learn More
+          </a>
+        </p>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-container" style="padding: 128px 16px" id="about">
+      <h3 class="w3-center">ABOUT WEB DEVELOPMENT</h3>
+      <p class="w3-center w3-large">Key languages of web development</p>
+      <div class="w3-row-padding w3-center" style="margin-top: 64px">
+        <div class="w3-third">
+          <i class="fa fa-html5 w3-margin-bottom w3-jumbo w3-center"></i>
+          <p class="w3-large">HTML</p>
+          <p>
+            HTML stands for Hypertext Markup Language, which is the standard markup language used to create web pages and applications. It is a coding language used to structure and display content on the internet.
+          </p>
+        </div>
+        <div class="w3-third">
+          <i class="fa fa-css3 w3-margin-bottom w3-jumbo"></i>
+          <p class="w3-large">CSS</p>
+          <p>
+            CSS stands for Cascading Style Sheets, which is a styling language used to control the visual appearance of web pages.CSS is used to define the layout, colors, fonts, and other visual elements of a web page.CSS is used to separate the presentation of a web page from its content, making it easier to maintain and update.
+          </p>
+        </div>
+        <div class="w3-third">
+          <i class="fa fa-js1 w3-margin-bottom w3-jumbo">JS</i>
+          <p class="w3-large">JavaScript</p>
+          <p>
+            JavaScript is a programming language used to create interactive and dynamic web pages.JavaScript is used to add functionality and interactivity to web pages, such as form validation, animation, and dynamic content.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Promo Section - "We know design" -->
+    <div class="w3-container w3-light-grey" style="padding: 128px 16px">
+      <div class="w3-row-padding">
+        <div class="w3-col m6">
+          <h3>Design.</h3>
+          <p>
+            Design is also a key component in a website.<br />Good web design is
+            essential for creating a visually appealing and functional website
+            or application. Design principles such as color theory, typography,
+            layout, and usability are important considerations for web
+            developers. Design tools like Adobe Photoshop, Sketch, and Figma are
+            often used to create mockups and wireframes of websites.
+          </p>
+          <p>
+            <a href="#work" class="w3-button w3-black"
+              ><i class="fa fa-th"> </i> View Webpage Designs</a
+            >
+          </p>
+        </div>
+        <div class="w3-col m6">
+          <img
+            class="w3-image w3-round-large"
+            src="https://www.softwaretestinghelp.com/wp-content/qa/uploads/2020/02/Weebly.png"
+            alt="Buildings"
+            width="700"
+            height="394"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="w3-container w3-padding-64">
+      <div class="w3-row-padding">
+        <div class="w3-col m6">
+          <h3>My Skills.</h3>
+          <p>
+            Front-end development refers to the coding and design of the user
+            interface and user experience (UI/UX) of a website or application.
+            Front-end developers use programming languages such as HTML, CSS,
+            and JavaScript to create the visual components of a website, such as
+            text, images, and interactive elements.
+          </p>
+          <p>
+            Back-end development refers to the server-side programming that
+            powers the functionality and data storage of a website or
+            application. Back-end developers use programming languages such as
+            PHP, Node.js, and Ruby on Rails to create the server-side logic,
+            interact with databases, and manage user authentication and
+            security.
+          </p>
+          <p>
+            Good web design is essential for creating a visually appealing and
+            functional website or application. Design principles such as color
+            theory, typography, layout, and usability are important
+            considerations for web developers. Design tools like Adobe
+            Photoshop, Sketch, and Figma are often used to create mockups and
+            wireframes
+          </p>
+        </div>
+        <div class="w3-col m6">
+          <p class="w3-wide">
+            <i class="fa fa-html5 w3-margin-right"></i
+            ><i class="fa fa-css3 w3-margin-right"></i
+            ><i class="fa w3-margin-right">JS</i> Front End Development
+          </p>
+          <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-center" style="width: 90%">
+              90%
+            </div>
+          </div>
+          <p class="w3-wide">
+            <i class="fa fa-desktop w3-margin-right"></i>Back End Development
+          </p>
+          <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-center" style="width: 75%">
+              75%
+            </div>
+          </div>
+          <p class="w3-wide">
+            <i class="fa fa-photo w3-margin-right"></i>Web Design
+          </p>
+          <div class="w3-grey">
+            <div class="w3-container w3-dark-grey w3-center" style="width: 85%">
+              85%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Promo Section "Statistics" -->
+    <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">4+</span>
+        <br />Websites
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">8+</span>
+        <br />Programming Languages
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">15+</span>
+        <br />Projects
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">23+</span>
+        <br />Designs
+      </div>
+    </div>
+
+    <!-- Work Section -->
+    <div class="w3-container" style="padding: 128px 16px" id="work">
+      <h3 class="w3-center">DESIGN TEMPLATES</h3>
+      <p class="w3-center w3-large">
+        The labels are links to try the webpage with a demo and the code.
+      </p>
+
+      <div class="w3-row-padding" style="margin-top: 64px">
+        <div class="w3-col l3 m6">
+          <img
+            src="https://www.w3schools.com/w3css/img_temp_gourmet_catering.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A template that will help you if you make a restaraunt or gourmet catering."
+          />
+          <a
+            href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_gourmet_catering&stacked=h"
+            ><h3>Gourmet Catering</h3></a
+          >
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="https://www.w3schools.com/w3css/img_temp_webpage.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A template that will help you to make a normal webpage that informs people about something."
+          />
+          <a
+            href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_webpage&stacked=h"
+            ><h3>Webpage Template</h3></a
+          >
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="https://www.w3schools.com/w3css/img_temp_startup.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A template that will help you start a buissness, company, or brand"
+          /><a
+            href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_startup"
+            ><h3>Start Up Template</h3></a
+          >
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="https://www.w3schools.com/w3css/img_temp_marketing.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A template that will help you if you are a marketer and want to attract people."
+          />
+          <a
+            href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_marketing&stacked=h"
+            ><h3>Marketing Template</h3></a
+          >
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-section">
+        <div class="w3-col l3 m6">
+          <img
+            src="https://www.w3schools.com/w3css/img_temp_analytics.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A template that will help show analytics to others"
+          />
+          <a
+            href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_analytics&stacked=h"
+            ><h3>Analytics Template</h3></a
+          >
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="https://www.w3schools.com/w3css/img_temp_app_launch.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A template that will help you launch an app and will attract more users to it"
+          />
+          <a
+            href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_app_launch&stacked=h"
+            ><h3>App Launch Template</h3></a
+          >
+        </div>
+
+        <div class="w3-col l3 m6">
+          <img
+            src="https://www.w3schools.com/w3css/img_temp_website.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A template that will help you inform people about yourself your team or buisness"
+          />
+          <a
+            href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_app_launch&stacked=h"
+            ><h3>Website Template</h3></a
+          >
+        </div>
+        <div class="w3-col l3 m6">
+          <img
+            src="https://www.w3schools.com/w3css/img_temp_art.jpg"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="w3-hover-opacity"
+            alt="A template that will help display your art to others sharing it with the world"
+          />
+          <a
+            href="https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_streetart&stacked=h"
+          >
+            <h3>Art Template</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for full size images on click-->
+    <div
+      id="modal01"
+      class="w3-modal w3-black"
+      onclick="this.style.display='none'"
+    >
+      <span
+        class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright"
+        title="Close Modal Image"
+        >×</span
+      >
+      <div
+        class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
+      >
+        <img id="img01" class="w3-image" />
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+
+    <!-- JOBS Section -->
+    <div
+      class="w3-container w3-light-grey"
+      style="padding: 128px 16px"
+      id="team"
+    >
+      <h3 class="w3-center">Jobs</h3>
+      <p class="w3-center w3-large">The ones who make the website</p>
+      <div class="w3-row-padding w3-grayscale" style="margin-top: 64px">
+        <div class="w3-col w3-third  w3-margin-bottom">
+          <div class="w3-card">
+            <img
+              src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&w=1000&q=80"
+              style="width: 100%"
+            />
+            <div class="w3-container">
+              <h3>Web Developer</h3>
+              <p><h6>Front End Developer</h6>A front-end developer is responsible for implementing the design into code using HTML, CSS, and JavaScript. They ensure that the website is responsive and works well on different devices.
+            <br />Salary: 107K-130K+</p>
+              <p><h6>Back End Developer</h6>A back-end developer works on the server-side of the website, creating the functionality that the user interacts with. They use programming languages such as PHP, Python, and Ruby to create dynamic websites.
+            <br />Salary: 82K-112K+</p>
+              <p><h6>Full Stack Developer</h6>A full-stack developer has knowledge and experience in both front-end and back-end development. They are responsible for creating both the client-side and server-side of the website.
+            <br />Salary: 86K-114K+</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col w3-third  w3-margin-bottom">
+          <div class="w3-card">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdKsyf8kvmv8WyuQMQRcanTR0GLtvrHcn93w&usqp=CAU"
+              style="width: 100%"
+            />
+            <div class="w3-container">
+              <h3>Designer</h3>
+              <p class="w3-opacity"></p>
+              <p>
+                <h6>Web Designer</h6> 
+                A web designer is responsible for the visual
+                appearance and user experience of the website. They work on the
+                layout, color scheme, typography, and graphics to create a
+                visually appealing and functional website.<br />
+                Salary: 39K to 78K per year
+              </p>
+              <p>
+                <h6>UI/UX Designer</h6> 
+                A UI/UX designer focuses on creating an
+                intuitive and user-friendly interface for the website. They work
+                on user flows, wireframes, and interactive prototypes to create
+                a seamless user experience.<br />
+                Salary:85K to 140K per year
+              </p>
+              <p><h6>Overview</h6> Designers are the blueprint of a webpage. They plan the structure style and fuctionality of your webpage.Without designers most webpages would be a mess and not as visually appealing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w3-col w3-third  w3-margin-bottom">
+          <div class="w3-card">
+            <img
+              src="https://media.istockphoto.com/id/980272768/photo/project-management-concept-chart-with-keywords-and-icons.jpg?s=612x612&w=0&k=20&c=OB3Lhh1-vD8ZU_07PM6F_vnN-hJTYhtWYID9UrFJRyU="
+              
+              style="width: 100%"
+            />
+            <div class="w3-container">
+              <h3>Others</h3>
+              <p><h6>Content Writer</h6> A content writer creates the text, images, and multimedia content that goes on the website. They work with the web designer and developer to ensure that the content is relevant, engaging, and optimized for search engines
+              <br />Salary: 21K-93K</p>
+              <p><h6>SEO Specialist</h6> An SEO specialist ensures that the website is optimized for search engines. They work on keyword research, on-page optimization, and link building to improve the website's ranking in search engine results pages.
+            <br /> Salary: 41K-100K</p>
+              <p><h6>Project Manager</h6>A project manager is responsible for overseeing the entire website creation process. They ensure that the project is completed on time, within budget, and meets the client's requirements. They also manage the team of designers and developers working on the website.
+            <br />Salary: 64K-140K</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing Section -->
+    <div
+      class="w3-container w3-dark-grey"
+      style="padding: 64px 16px"
+      id="pricing"
+    >
+      <div class="w3-center">
+        <h3 class="w3-xxlarge">Works Cited</h3>
+        <p class="w3-xlarge">These are the websites that were used to create this project</p>
+      </div>
+      <div class="w3-row-padding" style="margin-top: 32px">
+        <ul class="w3-large">
+            <li>W3.CSS Templates- Design Page</li>
+            <li>Glassdoor- Salaries</li>
+            <li>Udemy-JavaScript Course</li>
+            <li>w3School-Images</li>
+            <li>Visual Studio Code</li>
+            <li>Github</li>
+            <li>W3Schools Spaces</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div
+      class="w3-container w3-light-grey"
+      style="padding: 128px 16px"
+      id="contact"
+    >
+      <h3 class="w3-center">CONTACT</h3>
+      <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+      <div style="margin-top: 48px">
+        <p>
+          <i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>
+          Texas, US
+        </p>
+        <p>
+          <i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone:6692418727
+        </p>
+        <p>
+          <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>
+          Email: kanishka1.garg@gmail.com
+        </p>
+        <br />
+        <form action="/action_page.php" target="_blank">
+          <p>
+            <input
+              class="w3-input w3-border"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-border"
+              type="text"
+              placeholder="Email"
+              required
+              name="Email"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-border"
+              type="text"
+              placeholder="Subject"
+              required
+              name="Subject"
+            />
+          </p>
+          <p>
+            <input
+              class="w3-input w3-border"
+              type="text"
+              placeholder="Message"
+              required
+              name="Message"
+            />
+          </p>
+          <p>
+            <button class="w3-button w3-black" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+        <!-- Image of location/map -->
+        <img
+          src="https://www.w3schools.com/w3images/map.jpg"
+          class="w3-image w3-greyscale"
+          style="width: 100%; margin-top: 48px"
+        />
+      </div>
+    </div>
+
+
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
